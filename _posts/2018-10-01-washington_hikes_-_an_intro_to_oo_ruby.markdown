@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Washington Hikes - An Intro to OO Ruby"
-date:       2018-10-02 03:44:39 +0000
+title:      "Washington Hikes: An Intro to OO Ruby"
+date:       2018-10-01 23:44:40 -0400
 permalink:  washington_hikes_-_an_intro_to_oo_ruby
 ---
 
