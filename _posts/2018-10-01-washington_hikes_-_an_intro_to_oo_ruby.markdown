@@ -12,17 +12,17 @@ The hardest part of this project for me was not succumbing to feature creep. As 
 
 When I started Washington Hikes, I felt that I had a pretty good understanding of the nuts and bolts of object oriented programming (e.g. variables and methods, instance vs. class scope, self, etc.). I was less comfortable with the process of designing good object oriented systems from scratch. To help my future self any any other beginners who may read this, here's four easy steps to design basic object oriented programs:
 
-#### 1. Identify Objects
+#### **1. Identify Objects**
 The first thing I did when starting Washington Hikes was identify the objects I needed to build. An object should either help you model something tangible (like a hike) or accomplish a specific job (like scraping web data). I learned an easy trick from my instructor to determine which objects you need for a project. Simply write down what you want the user to do in English and extract the nouns and verbs - these are your objects. Nouns are things you will model, and verbs are specific jobs you will do. Following that advice I wrote: "I want the user to be able to **find** **hikes** in a specific **region** of Washington from **scraped data**." Using my instructors model, I needed four classes: CLI (to find hikes for the user), Hike (to model hikes), Region (to model regions), and Scraper (to scrape web data).
 
 
-#### 2. Identify Object Responsibilities and Relationships
+#### **2. Identify Object Responsibilities and Relationships**
 I'm a kinetic thinker, so I decided to sketch out a rough domain model for Washington Hikes to ground myself in what I needed to build before I started to code. I mapped out the basic relationships between classes, and the responsibilities and properties of each. This was super helpful because as I wrote code it was easy refer back to this model when determining where a piece of logic shoud live. I iterated on my model through the course of my project as I learned more, and ultimately here's where I landed: 
 
 ![](https://ydy0ga.bn.files.1drv.com/y4m5zyJpFWwadIadK_wTa0RU5hx8Eum1yn20zUXXCmfI9SpNK2ZwAtGoKS55L6xCG0drkCLL-7KQVsb5dZ8JKZtdTSNxKDWBoLma2IdkZYSKLq01ZZKeCOMWgXm-ExFZUxklXNUxOQG4z2h9cSpb4X6m2t_bKl9T1AJ7uHZjXTyVFWs1MH-Jdgg4c2LJSb9rbt9Al4biMeSd1ZeWzKOxfy2dw?width=921&height=412&cropmode=none)
 
 
-#### 3. Design the Interface Between Objects (with Hard Coded Methods and Data)
+#### **3. Design the Interface Between Objects (with Hard Coded Methods and Data)**
 A good place to start here is to stub out the user interaction model. I started Washington Hikes by creating the CLI methods I needed to provide options and interpret input from users. This includes:
 * A #welcome method to greet the user and determine what they want to do first
 * A #choose_region method to promt the user to choose a region
@@ -35,7 +35,7 @@ A good place to start here is to stub out the user interaction model. I started 
 At first I simply hard coded data and inputs for these methods in my CLI class. This enabled me to create the entire user interface and verify what data I thought I needed before doing the hard work to create Hike and Region objects and scrape web data.
 
 
-#### 4. Replace Hard Coded Methods and Data with Real Methods and Data
+#### **4. Replace Hard Coded Methods and Data with Real Methods and Data**
 I started this step by creating Hike and Region objects. At first I simply moved hard coded data that should belong to a hike or region into methods in those classes, and ensured my CLI continued to work as expected. I then created my Scraper class to scrape hike and region data from the web, and slowly plumbed real data through Washington Hikes method by method. This is the longest and hardest step, but I find lighting up every incremental piece of data to be very satisfying.  Once this is done, all I had to do was a bit of code cleanup and [publish my first gem](https://rubygems.org/gems/washington_hikes)!
 
 
