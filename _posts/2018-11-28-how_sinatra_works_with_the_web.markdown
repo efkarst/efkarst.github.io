@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "How Sinatra works with the web"
-date:       2018-11-29 04:22:56 +0000
+title:      "How Sinatra Works with the Web"
+date:       2018-11-28 23:22:57 -0500
 permalink:  how_sinatra_works_with_the_web
 ---
 
