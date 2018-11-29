@@ -18,7 +18,7 @@ If there were only a few devices in the world this would be a fairly simple theo
 ### Sinatra Request and Response Cycle
 Let's take a more detailed look at how a typical HTTP request and response cycle works for a Sinatra web app. The diagram below details how the internet routes an HTTP request from a client to the appropriate web server, dynamically generates a web page with a Sinatra app on that web server, and sends the HTTP response back to the client.
 
-![HTTP Request and Response Cycle for a Sinatra App](https://gorvog.bn.files.1drv.com/y4me4USMf7sR_Wn0crnLWSvkxAXUjuEtwxsJjimnNki6lYLj1Lt1jsMpri-XIgLYo2VhVJcr-STyEVBXbi14BC2OJsPacW8TwEcWqByKhGQDZJsG88dyAaGQoLc4NLzaYc1y5GwfKlFFmj6bjFiYcLCy2WmHmv5bAkGmRn0sy0pHapfqC0vhokUxS1RVqMQVIaBNTds1I4iGjFFB0vzkTwuXA?width=794&height=736&cropmode=none)
+![HTTP Request and Response Cycle for a Sinatra App](https://r4z5ug.bn.files.1drv.com/y4mY0lKj1oEe6btdgXD4CDHXwzfxCHjOcKqdqnfRWtWL1NVFs5qa-_oXlnXIfg-x77v0lrJHmA1t2GYeKea7kmoAYkwwMYORTE3NtP3Fzqaez-CzCNk6AGvoIGipcugBX6wwWcZXYCkRtzOR-H9eE3YzD92beyKFoU8TOXjaG2b4VaIztuNEo94IK5BNkQNc1MSchcNYXx29MpxQEQ66orDtQ?width=1681&height=1533&cropmode=none)
 
 This looks complex, but with information traveling faster than the speed of light across the world-wide-web all of this happens in milliseconds. The user can enjoy the requested web page nearly instantaneously.
 
