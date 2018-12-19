@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "homeUp - A Sinatra Home Improvement Project"
+title:      "homeUp: A Sinatra Home Improvement Project"
 date:       2018-12-18 22:42:18 -0500
 permalink:  homeup_-_a_sinatra_home_improvement_project
 ---
