@@ -9,9 +9,9 @@ permalink:  homeup_-_a_sinatra_home_improvement_project
 [homeUp](https://github.com/efkarst/homeup) is my first full stack web development project. homeUp allows you to plan, track and budget for home improvement projects. Users can create projects for each room in their home and track their notes, material, time and budget for each project and room. 
 
 ### How it was built
-homeUp is a MVC Sinatra application that uses Active Record for relational database management. It is built with three models: User, Room and Project. Each user can have many projects through many rooms. Each room has one user and many projects. Each project belongs to one room and one user through its room. These relationship and the characteristics of each class are described in the following structural UML diagram: 
+homeUp is a MVC Sinatra application that uses Active Record for relational database management. It is built with three models: User, Room and Project. Each user can have many projects and many rooms. Each room has one user and many projects. Each project belongs to one room and one user. These relationship and the characteristics of each class are described in the following structural UML diagram: 
 
-![Model](https://unne2a.bn.files.1drv.com/y4mu7J5PZ-1atKll871ER7qV2sv1aofoylxIv8GHMOj2JNJCzgp5eZdxR-pHvDGPDSQvFsV31xQhShWldTU_rXrXWgg654gNdI8G8OUcTtPgkLeKHbx4hVeeAJFEdlbC8jqnveJ8bDjaRT4a-KLY4lGcz-_vXu8wszVVJZzuVgNwZaVynxoqKCcK86y19aKlbmfhznXGBQcWtX2fa6UL18T8Q?width=660&height=285&cropmode=none)
+![Model](https://3gbovq.bn.files.1drv.com/y4mwyHLit4qB7RZO8h_dVTErAqrN7g3RUcO3TaJIAo-MV3JbhB7QA8tdxYM0yiiz1MZU4e7m60eDW-1bW_UTV_gKQY5xZMGFy9M0ZkqTKpEaIPl4PVIgfSXtjnHoJ9i2j7i_jjfd1EcmaJlgz-NTzZl9rSx_7DHDnG6jpvkiqNKl8r-Bc8Gy_CdkABEeBzGROh-TGBBsC0mLrQ5RWo_Lq0IHA?width=660&height=271&cropmode=none)
 
 Object data is validated using Active Record Validations before any new object data is saved to the database. For example, when a new project is created Active Record Validations are used to ensure that the user has provided a name (scoped to that user's project collection) and room for the project. I also verify that values for cost and duration are numeric. Additional validations are in place for the User and Room classes.
 
