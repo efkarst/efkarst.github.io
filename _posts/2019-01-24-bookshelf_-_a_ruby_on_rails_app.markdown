@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Bookshelf - A Ruby on Rails App"
-date:       2019-01-24 17:34:13 +0000
+date:       2019-01-24 12:34:13 -0500
 permalink:  bookshelf_-_a_ruby_on_rails_app
 ---
 
@@ -18,11 +18,12 @@ Beyond finding and tracking books, the value of an app like Bookshelf will be it
 ### The Technology
 
 Bookshelf is still in its infancy, and I look forward to building on and refactoring this project as I learn JavaScript in the coming months. Here's an overview of the technology used for Bookshelf thus far:
-* Developed a Rails API backend with endpoints for books, book shelves and book reviews
-* Scraped Google Books API to provide book information based on user search keywords
-* Utilized omniauth and omniauth-google-oauth2 gems for user authentication through Google, and bcrypt for standard user authentication
-* Defend against invalid data with Active Record Validations 
-* Implemented user interface with HTML and CSS
+* Developed an object-oriented, MVC Rails app using Active Record for relational database management and validations.
+* Call Google Books API to provide information on books related based on keyword searches from user.
+* Utilized omniauth-google-oauth2 gem to enable user authentication via Google and bcrypt for standard authentication.
+* Implemented HTML interface with CSS for styling.
+* Used Capybara to implement end-to-end feature tests.
+
 
 
 Bookshelf's current models and their associations are outlined here:
