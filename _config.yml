@@ -5,7 +5,7 @@ header-img: img/home-bg.png
 email: efkarst@outlook.com
 copyright_name: Elizabeth Karst
 description: > # this means to ignore newlines until "baseurl:"
-  From Product Manager to Full Stack Developer
+  Learning Full Stack Web Development
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  efkarst
